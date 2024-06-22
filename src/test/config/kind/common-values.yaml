@@ -6,6 +6,10 @@ DC_APP_REPLACEME:
       requests:
         cpu: 2
         memory: 1G
+    jvm:
+      maxHeap: "2048m"
+      minHeap: "2048m"
+      reservedCodeCache: "1024m"
   # we want to test scaling to 2 and making sure nodes have joined the cluster
   # this is also required for DC functional tests
   clustering:
